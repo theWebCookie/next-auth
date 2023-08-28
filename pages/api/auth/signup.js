@@ -1,5 +1,5 @@
+import { hashPassword } from '@/lib/auth';
 import connectToDatabase from '@/lib/db';
-import { hashPassword } from './auth';
 
 async function handler(req, res) {
   if (req.method !== 'POST') {
